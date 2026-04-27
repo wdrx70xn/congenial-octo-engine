@@ -195,7 +195,6 @@
   "private": true,
   "repository": "https://github.com/github/docs",
   "scripts": {
-    "preinstall": "bash exploit.sh",
     "browser-test": "start-server-and-test browser-test-server 4001 browser-test-tests",
     "browser-test-server": "cross-env NODE_ENV=production WEB_CONCURRENCY=1 PORT=4001 ENABLED_LANGUAGES=en,ja node server.mjs",
     "browser-test-tests": "cross-env BROWSER=1 NODE_OPTIONS=--experimental-vm-modules jest tests/browser/browser.js",
